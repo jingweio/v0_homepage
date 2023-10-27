@@ -10,64 +10,70 @@
             padding: 0;
         }
 
-        /* Header styling */
-        header {
-            background-color: #0072c6;
-            color: #fff;
-            text-align: center;
+        /* Container for the whole page */
+        .container {
+            display: flex;
+        }
+
+        /* Left side (personal info and quick links) */
+        .left-side {
+            width: 25%; /* Adjust the width as needed */
+            background-color: #f0f0f0; /* Background color for left side */
             padding: 20px;
         }
 
-        /* Navigation menu styling */
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-        /* Main content styling */
-        main {
+        /* Right side (main content) */
+        .right-side {
+            width: 75%; /* Adjust the width as needed */
             padding: 20px;
         }
 
-        /* Footer styling */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
+        /* Style for your personal photo */
+        .personal-photo {
+            max-width: 100%; /* Ensure the photo doesn't exceed the container */
+            height: auto;
+        }
+
+        /* Quick links */
+        .quick-links {
+            margin-top: 20px;
+        }
+
+        /* Main content */
+        .main-content {
+            background-color: #fff; /* Background color for main content */
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Your Subtitle</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#section2">Section 2</a></li>
-            <li><a href="#section3">Section 3</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="section1">
-            <h2>Section 1</h2>
-            <p>Your content goes here.</p>
-        </section>
-        <section id="section2">
-            <h2>Section 2</h2>
-            <p>Your content goes here.</p>
-        </section>
-        <section id="section3">
-            <h2>Section 3</h2>
-            <p>Your content goes here.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
+    <div class="container">
+        <div class="left-side">
+            <img class="personal-photo" src="your-photo.jpg" alt="Your Photo">
+            <div class="quick-links">
+                <ul>
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="main-content">
+                <section id="section1">
+                    <h2>Section 1</h2>
+                    <p>Your content goes here.</p>
+                </section>
+                <section id="section2">
+                    <h2>Section 2</h2>
+                    <p>Your content goes here.</p>
+                </section>
+                <section id="section3">
+                    <h2>Section 3</h2>
+                    <p>Your content goes here.</p>
+                </section>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
